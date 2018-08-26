@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-# challenge
-=======
 
-#Project Overview
+# Project Overview
+
 
 This project has two separate modules apiTest and functionalTest, each with its individual build.gradlew file , so that
 the modules are independent and can be added in different project.
@@ -84,4 +82,4 @@ For running the test in Firefox change the browser value to 'ff' and to run it i
 The test can run in different environments.
 For running it in anywhere else other than localhost change the baseURI and Port value.
 
->>>>>>> initialize repo
+
