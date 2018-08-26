@@ -5,19 +5,22 @@
 This project has two separate modules apiTest and functionalTest, each with its individual build.gradlew file , so that
 the modules are independent and can be added in different project.
 
-#apiTest
+# apiTest
 In this module all the integration tests are added based on the apiPath under the todoComponent directory.
 helper directory contains all the heplper class.
 
 **ApiCalls** 
 Contains all the apiCalls , so that the test doesnt need to handle the call and if the call changes anytime 
 only changing here will be enough.
+
 **ConfigHadler**
 This class provides method to read the config property based on key.So in different places we dont need to 
 read the config differently.
+
 **DataHandler**
 This class contains method for manipulating data. For different tests data needs to be created as prerequisite also data
 needs to be deleted afterwards.This class provides that facility.
+
 **Utility**
 This class contains the functions for @Before and @After method. Wanted to keep it common across tests and for
 changing anything will not need to modify in multiple places.
@@ -26,18 +29,18 @@ changing anything will not need to modify in multiple places.
 Run the following command
 ./gradlew build
 
-# Running Integration Test
+# Running api Test
 Run the following command
 ./gradlew test
 
-# @Ignored tests
+**@Ignored tests**
 Some tests cannot be run now as the implementation of original api is not correct. The tests should work fine when
 the api implementation is fixed on server side.
 
 
 
 
-#Functional Test
+# functional Test
 This module contains Selenium tests for UI functionality verification.
 It is organized in following structure:
 
@@ -51,8 +54,10 @@ This directory contains all the supportive classes.
 
 **ActionWrapper**
 This class contains wrapper for generic Selenium actions. 
+
 **BrowserLibrary**
 This class contains the browser based driver initialization. It could be extended to add more browsers if needed.
+
 **ConfigHandler**
 This class provides method to read the config property based on key.So in different places we dont need to 
 read the config differently.
