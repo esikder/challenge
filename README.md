@@ -25,10 +25,6 @@ needs to be deleted afterwards.This class provides that facility.
 This class contains the functions for @Before and @After method. Wanted to keep it common across tests and for
 changing anything will not need to modify in multiple places.
 
-#Install 
-Run the following command
-./gradlew build
-
 # Running api Test
 Run the following command
 ./gradlew test
